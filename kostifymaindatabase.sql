@@ -188,7 +188,7 @@ CREATE TABLE `profiles` (
 INSERT INTO `profiles` (`user_id`, `first_name`, `last_name`, `address`, `created_at`) VALUES
 (1, 'Nadhif', 'Fauzil Adhim', ' Slanden, Banjaroyo, Kec. Kalibawang, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55672', '2024-07-23 03:54:53'),
 (2, 'Julian', 'Kiyosaki', 'Jl. Raya Solo KM.9, Maguwoharjo, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55282', '2024-07-23 03:54:53'),
-(3, 'rif\'aa', 'surososastro', 'Gg. Seruni Jl. Karang Asem No.8, Karang Gayam, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281', '2024-07-23 03:54:53'),
+(3, 'rifaa', 'surososastro', 'Gg. Seruni Jl. Karang Asem No.8, Karang Gayam, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281', '2024-07-23 03:54:53'),
 (4, 'Dwi', 'Ferdiyanto', 'Jl. Letnan Jenderal Suprapto No.18C, Keposan, Kebumen, Kec. Kebumen, Kabupaten Kebumen, Jawa Tengah 54311', '2024-07-23 03:54:53'),
 (5, 'Muhajir', 'Faturahmman', 'Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281', '2024-07-23 03:54:53'),
 (6, 'Andi', 'Prabowo Santoso', 'Jl. Merpati No.6, Rt.01/Rw.02, Kelurahan Cempaka, Kecamatan Setiabudi, Jakarta Selatan, 12900', '2024-07-23 06:05:30'),
@@ -565,7 +565,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `is_owner`, `username`, `email`, `password`, `created_at`) VALUES
 (1, 1, 'nadhif', 'nadhif@gmail.com', '123', '2024-07-23 03:52:55'),
 (2, 1, 'julian', 'julian@gmail.com', '123', '2024-07-23 03:52:55'),
-(3, 0, 'rif\'aa', 'rifaa@gmail.com', '123', '2024-07-23 03:52:55'),
+(3, 0, 'rifaa', 'rifaa@gmail.com', '123', '2024-07-23 03:52:55'),
 (4, 0, 'ferdi', 'ferdi@gmail.com', '123', '2024-07-23 03:52:55'),
 (5, 0, 'muhajir', 'muhajir@gmail.com', '123', '2024-07-23 03:53:31'),
 (6, 1, 'andi', 'andi@gmail.com', '123', '2024-07-23 05:43:37'),
@@ -602,7 +602,7 @@ CREATE TABLE `vertical_view` (
 --
 DROP TABLE IF EXISTS `horizontal_view`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `horizontal_view`  AS SELECT `property`.`id` AS `id`, `property`.`user_id` AS `user_id`, `property`.`property_name` AS `property_name`, `property`.`price` AS `price`, `property`.`description` AS `description` FROM `property``property`  ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `horizontal_view`  AS SELECT `property`.`id` AS `id`, `property`.`user_id` AS `user_id`, `property`.`property_name` AS `property_name`, `property`.`price` AS `price`, `property`.`description` AS `description` FROM `property` ;
 
 -- --------------------------------------------------------
 
